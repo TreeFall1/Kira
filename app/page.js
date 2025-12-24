@@ -22,7 +22,7 @@ export default function Home() {
                 className={styles.gif}
 
             />
-            <Image src={'/serdce.png'} alt={'Мыы'} width={64} height={64} />
+            <Image src={'/serdce.png'} alt={'Мыы'} width={64} height={64} unoptimized={true} />
             <img
                 src="/skating-ice-skate.gif"
                 alt="Я"
