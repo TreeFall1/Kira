@@ -1,0 +1,78 @@
+.wrapper {
+  min-height: 100vh;
+  background: url('/background(2).jpg') center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title), sans-serif;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  padding: 40px 30px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08); // ← ОБЯЗАТЕЛЬНО
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+
+}
+
+.details {
+  margin-bottom: 30px;
+
+  p {
+    margin: 6px 0;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+}
+
+.button {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0f2027;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.gif {
+  width: 128px;
+  height: auto;
+  pointer-events: none;
+}
+
+.gifContainer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
